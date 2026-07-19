@@ -3,6 +3,8 @@ import NotFound from "./views/NotFound.vue";
 import Welcome from "./views/Welcome.vue";
 import Trips from "./views/Trips.vue";
 import DefaultLayout from "./layouts/DefaultLayout.vue";
+import TripDetails from "./views/TripDetails.vue";
+import TripEdit from "./views/TripEdit.vue";
 
 const routes = [
     {
@@ -18,6 +20,16 @@ const routes = [
                 path: '/trip',
                 name: 'Trips',
                 component: Trips,
+            },
+            {
+                path: '/trip/:id',
+                name: 'Trip',
+                component: TripDetails,
+            },
+            {
+                path: '/trip/create',
+                name: 'CreateTrip',
+                component: TripEdit,
             },
         ],
     },
