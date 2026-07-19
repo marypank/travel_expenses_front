@@ -31,6 +31,11 @@ const routes = [
                 name: 'CreateTrip',
                 component: TripEdit,
             },
+            {
+                path: '/trip/:id/edit',
+                name: 'UpdateTrip',
+                component: TripEdit,
+            },
         ],
     },
     {
