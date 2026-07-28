@@ -48,6 +48,16 @@ const routes = [
         name: 'NotFound',
         component: NotFound,
     },
+    {
+        path: '/login',
+        name: 'Login',
+        component: Login,
+    },
+    {
+        path: '/register',
+        name: 'Register',
+        component: Register,
+    },
 ];
 
 const router = createRouter({
